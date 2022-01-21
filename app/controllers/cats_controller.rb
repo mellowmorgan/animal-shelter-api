@@ -27,11 +27,6 @@ class CatsController < ApplicationController
 
   def update
     @cat = Cat.find(params[:id])
-    @cat.image_url = params[:image_url]
-    if @cat.image_url
-      downloaded_image = URI.open(@cat.image_url)
-      @cat.image.attach(io: downloaded_image, filename: @cat.id.to_s+".jpg")
-    end
     if @cat.update!(cat_params)
       render status: 200, json: {
       message: "This cat has been updated successfully."
