@@ -47,7 +47,8 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
-|See all cats (paginated) | GET    | `localhost:3000/cats?page=1` | _page_ |
+|See all cats (paginated) | GET    | `localhost:3000/cats?page=PAGE_NUMBER` | _page_ |
+|See all cats (auto-paginated) | GET    | `localhost:3000/cats` | |
 |See a specific cat | GET    | `localhost:3000/cats/:id` | |
 |Search for cat by breed | GET    | `localhost:3000/dogs?breed=BREED&page=1` | _breed, page_ |
 |See a random cat | GET    | `localhost:3000/cats/random` | |
@@ -61,6 +62,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
 |See all dogs (paginated) | GET    | `localhost:3000/dogs?page=PAGE_NUMBER` | _page_ |
+|See all dogs (auto-paginated) | GET    | `localhost:3000/dogs` | |
 |See a specific dog | GET    | `localhost:3000/dogs/:id` | |
 |Search for dog by breed | GET    | `localhost:3000/dogs?breed=BREED&page=1` | _breed, page_ |
 |See a random dog | GET    | `localhost:3000/dogs/random` | |
