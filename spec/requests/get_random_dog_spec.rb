@@ -7,7 +7,7 @@ describe "get a random dog route", :type => :request do
   before { get '/dogs/random'}
 
   it 'returns one random dog' do
-    expect(JSON.parse(response.body).size).to eq(4)
+    expect(JSON.parse(response.body).size).to eq(5)
     expect(JSON.parse(response.body)['name']).to_not eq(nil)
   end
 
