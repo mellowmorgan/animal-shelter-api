@@ -10,14 +10,12 @@
 * _Gems_
 * _Bundler_
 * _RSpec_
-* _shoulda-matchers_
 * _IRB_
 * _Pry_
 * _Postgres_
 * _SQL_
 * _Rails_
 * _ActiveRecord_
-* _Bootstrap SCSS_
 * _Faker_
 * _Will Paginate_
 * _Factory Bot_
