@@ -19,6 +19,9 @@
 * _Faker_
 * _Will Paginate_
 * _Factory Bot_
+* _will_paginate_
+* _HTTParty_
+* _open-uri_
 
 ## Description
 
@@ -40,6 +43,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 * Enter `rspec` into the terminal to confirm passing of all tests.
 * Run `rails s` to start the Rails server.
 * In Postman (for full CRUD use) or internet browser (for viewing), enter localhost:3000/cats (unless other port specified) or localhost:3000/dogs to see all the animals!
+* Note: url must be valid for image_url attribute
 
 ## Endpoints Cats
 
