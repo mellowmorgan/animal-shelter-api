@@ -50,7 +50,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 | :--------|:------------| :---------| :------|
 |See all cats (paginated) | GET    | `localhost:3000/cats?page=1` | _page_ |
 |See a specific cat | GET    | `localhost:3000/cats/:id` | |
-|Search for cat by breed | GET    | `localhost:3000/quotes?breed=BREED&page=1` | _breed, page_ |
+|Search for cat by breed | GET    | `localhost:3000/dogs?breed=BREED&page=1` | _breed, page_ |
 |See a random cat | GET    | `localhost:3000/cats/random` | |
 |Add/create a cat | POST    | `localhost:3000/cats` | _author, content_ |
 |Update a cat | PUT    | `localhost:3000/cats/:id` | _name, breed, age_ |
@@ -63,7 +63,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 | :--------|:------------| :---------| :------|
 |See all dogs (paginated) | GET    | `localhost:3000/dogs?page=PAGE_NUMBER` | _page_ |
 |See a specific dog | GET    | `localhost:3000/dogs/:id` | |
-|Search for dog by breed | GET    | `localhost:3000/quotes?breed=BREED&page=1` | _breed, page_ |
+|Search for dog by breed | GET    | `localhost:3000/dogs?breed=BREED&page=1` | _breed, page_ |
 |See a random dog | GET    | `localhost:3000/dogs/random` | |
 |Add/create a dog | POST    | `localhost:3000/dogs` | _author, content_ |
 |Update a dog | PUT    | `localhost:3000/dogs/:id` | _name, breed, age_ |
