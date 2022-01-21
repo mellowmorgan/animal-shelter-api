@@ -8,19 +8,16 @@
 Dog.destroy_all
 Cat.destroy_all
 class Seed
-
   def self.begin
     seed = Seed.new
     seed.generate_cats
     seed.generate_dogs
   end
-
   def generate_cats
     50.times do |i|
       cat = Cat.create!(
         name: Faker::Creature::Cat.name,
-        breed: Faker::Creature::Cat.breed, age: rand(1..21)
-      )
+        breed: Faker::Creature::Cat.breed, age: rand(1..21), image_url: CatImage.get_random_cat_pic_url)
       puts "Cat #{i}: name #{cat.name} and breed is '#{cat.breed}' and age is #{cat.age}."
     end
   end
@@ -28,8 +25,7 @@ class Seed
     20.times do |i|
       dog = Dog.create!(
         name: Faker::Creature::Dog.name,
-        breed: Faker::Creature::Dog.breed, age: rand(1..21)
-      )
+        breed: Faker::Creature::Dog.breed, age: rand(1..21), image_url: DogImage.get_random_dog_pic_url)
       puts "Dog #{i}: name #{dog.name} and breed is '#{dog.breed}' and age is #{dog.age}."
     end
   end
