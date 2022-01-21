@@ -39,6 +39,6 @@ class CatsController < ApplicationController
 
 
   def cat_params
-    params.permit(:content)
+    params.permit(:name, :breed, :age)
   end
 end
