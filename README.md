@@ -23,6 +23,7 @@
 * _HTTParty_
 * _open-uri_
 * _shoulda-matchers_
+* _Postman_
 
 ## Description
 
@@ -32,7 +33,7 @@ This API uses a database with tables for cats and dogs and retrieves the data us
 
 * Ruby v2.6.5 recommended
 * Postgres 12.9  
-* Postman
+* Postman (for testing API endpoints)
 _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 
 ## Setup/Installation Requirements
