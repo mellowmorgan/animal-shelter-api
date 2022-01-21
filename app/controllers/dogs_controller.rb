@@ -5,7 +5,12 @@ class DogsController < ApplicationController
   end
   
   def index
-    @dogs = Dog.all
+    breed = params[:breed]
+    if breed
+      @dogs = Dog.search_breed(breed).paginate(page: params[:page], per_page: 5)
+    else
+      @dogs = Dog.paginate(page: params[:page], per_page: 5)
+    end
     json_response(@dogs)
   end
 
@@ -36,7 +41,6 @@ class DogsController < ApplicationController
       }
     end
   end
-
 
   def dog_params
     params.permit(:name, :breed, :age)

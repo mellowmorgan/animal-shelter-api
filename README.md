@@ -61,7 +61,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
-|See all dogs (paginated) | GET    | `localhost:3000/dogs?page=1` | _page_ |
+|See all dogs (paginated) | GET    | `localhost:3000/dogs?page=PAGE_NUMBER` | _page_ |
 |See a specific dog | GET    | `localhost:3000/dogs/:id` | |
 |Search for dog by breed | GET    | `localhost:3000/quotes?breed=BREED&page=1` | _breed, page_ |
 |See a random dog | GET    | `localhost:3000/dogs/random` | |

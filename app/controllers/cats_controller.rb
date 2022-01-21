@@ -5,9 +5,15 @@ class CatsController < ApplicationController
   end
   
   def index
-    @cats = Cat.all
+    breed = params[:breed]
+    if breed
+      @cats = Cat.search_breed(breed).paginate(page: params[:page], per_page: 5)
+    else
+      @cats = Cat.paginate(page: params[:page], per_page: 5)
+    end
     json_response(@cats)
   end
+
 
   def show
     @cat = Cat.find(params[:id])
