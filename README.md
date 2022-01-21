@@ -50,8 +50,8 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |See a specific cat | GET    | `localhost:3000/cats/:id` | |
 |Search for cat by breed | GET    | `localhost:3000/dogs?breed=BREED&page=1` | _breed, page_ |
 |See a random cat | GET    | `localhost:3000/cats/random` | |
-|Add/create a cat | POST    | `localhost:3000/cats` | _author, content_ |
-|Update a cat | PUT    | `localhost:3000/cats/:id` | _name, breed, age_ |
+|Add/create a cat | POST    | `localhost:3000/cats` | _name, breed, age, image_url_ |
+|Update a cat | PUT    | `localhost:3000/cats/:id` | _name, breed, age, image_url_ |
 |Delete a cat | DELETE    |`localhost:3000/cats/:id`| |  
 
 ## Endpoints Dogs
@@ -63,8 +63,8 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |See a specific dog | GET    | `localhost:3000/dogs/:id` | |
 |Search for dog by breed | GET    | `localhost:3000/dogs?breed=BREED&page=1` | _breed, page_ |
 |See a random dog | GET    | `localhost:3000/dogs/random` | |
-|Add/create a dog | POST    | `localhost:3000/dogs` | _author, content_ |
-|Update a dog | PUT    | `localhost:3000/dogs/:id` | _name, breed, age_ |
+|Add/create a dog | POST    | `localhost:3000/dogs` | _name, breed, age, image_url_ |
+|Update a dog | PUT    | `localhost:3000/dogs/:id` | _name, breed, age, image_url_ |
 |Delete a dog | DELETE    |`localhost:3000/dogs/:id`| | 
 
 
@@ -77,7 +77,8 @@ When getting a single cat or dog, expect the response to look like:
   "id" : integer,
   "name" : string,
   "breed" : string,
-  "age" : integer
+  "age" : integer,
+  "image_url" : string
 }
 ```
 
