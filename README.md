@@ -17,7 +17,6 @@
 * _Rails_
 * _ActiveRecord_
 * _Faker_
-* _Will Paginate_
 * _Factory Bot_
 * _will_paginate_
 * _HTTParty_
