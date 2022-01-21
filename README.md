@@ -22,6 +22,7 @@
 * _will_paginate_
 * _HTTParty_
 * _open-uri_
+* _shoulda-matchers_
 
 ## Description
 
