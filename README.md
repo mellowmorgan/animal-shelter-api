@@ -2,7 +2,7 @@
 
 #### _Rails API independent project_
 
-#### Created By: **Frank Proulx, Morgan Waites, & Christopher Neal**
+#### Created By: Morgan Waites
 
 ## Technologies Used
 
@@ -15,7 +15,6 @@
 * _Pry_
 * _Postgres_
 * _SQL_
-* _SQL Designer_
 * _Rails_
 * _ActiveRecord_
 * _Bootstrap SCSS_
