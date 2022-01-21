@@ -1,4 +1,4 @@
-# _Animal Shelter Rails API_
+# Animal Shelter Rails API
 
 #### _Rails API independent project_
 
@@ -57,7 +57,6 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |Delete a cat | DELETE    |`localhost:3000/cats/:id`| |  
 
 ## Endpoints Dogs
-
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
