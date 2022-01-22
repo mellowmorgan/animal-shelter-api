@@ -4,7 +4,7 @@ describe "get a random cat route", :type => :request do
   Cat.destroy_all
   let!(:cats) { FactoryBot.create_list(:cat, 20)}
 
-  before { get '/cats/random'}
+  before { get '/api/v1/cats/random'}
 
   it 'returns one random cat' do
     expect(JSON.parse(response.body).size).to eq(5)

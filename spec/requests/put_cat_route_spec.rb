@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "update a cat route", :type => :request do
   let!(:cats) { FactoryBot.create_list(:cat, 20)}
   before do
-    put "/cats/#{Cat.first.id}", params: { :name => 'test_name_updated', :breed => 'test_breed_updated',
+    put "/api/v1/cats/#{Cat.first.id}", params: { :name => 'test_name_updated', :breed => 'test_breed_updated',
     :age => 5 } 
   end
 

@@ -4,7 +4,7 @@ describe "post a cat route", :type => :request do
   let!(:dogs) { FactoryBot.create_list(:dog, 20)}
 
   before do
-    post '/dogs', params: { :name => 'test_name', :breed => 'test_breed',
+    post '/api/v1/dogs', params: { :name => 'test_name', :breed => 'test_breed',
     :age => 4 }
   end
 
