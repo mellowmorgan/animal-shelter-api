@@ -43,7 +43,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
       `rake db:setup`
 * Enter `rspec` into the terminal to confirm passing of all tests.
 * Run `rails s` to start the Rails server.
-* In Postman (for full CRUD use) or internet browser (for viewing), enter localhost:3000/cats (unless other port specified) or localhost:3000/dogs to see all the animals!
+* In Postman (for full CRUD use) or internet browser (for viewing), enter localhost:3000/api/v1/cats (unless other port specified) or localhost:3000/api/v1/dogs to see all the animals!
 
 ## Endpoints Cats
 
