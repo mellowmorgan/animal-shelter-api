@@ -17,3 +17,16 @@ describe "get all dogs route", :type => :request do
     expect(response).to have_http_status(:success)
   end
 end
+describe "get dogs by breed route", :type => :request do
+  Dog.destroy_all
+  it 'returns 2 dogs with German Shepard breed' do
+    post "/api/v1/dogs", params: { :name => 'Bop', :breed => 'German Shepard',
+    :age => 5 } 
+    post "/api/v1/dogs", params: { :name => 'Bop', :breed => 'Bulldog',
+    :age => 5 } 
+    post "/api/v1/dogs", params: { :name => 'Bop', :breed => 'German Shepard',
+    :age => 5 } 
+    get '/api/v1/dogs?breed=German Shepard'
+    expect(JSON.parse(response.body).size).to eq(2)
+  end
+end

@@ -18,3 +18,16 @@ describe "get all cats route", :type => :request do
     expect(response).to have_http_status(:success)
   end
 end
+describe "get cats by breed route", :type => :request do
+  Cat.destroy_all
+  it 'returns 2 cats with Persian breed' do
+    post "/api/v1/cats", params: { :name => 'Bop', :breed => 'Persian',
+    :age => 5 } 
+    post "/api/v1/cats", params: { :name => 'Bop', :breed => 'Persian',
+    :age => 5 } 
+    post "/api/v1/cats", params: { :name => 'Bop', :breed => 'Tabby',
+    :age => 5 } 
+    get '/api/v1/cats?breed=Persian'
+    expect(JSON.parse(response.body).size).to eq(2)
+  end
+end
