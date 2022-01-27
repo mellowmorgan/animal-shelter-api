@@ -46,6 +46,8 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 * In Postman (for full CRUD use) or internet browser (for viewing), enter localhost:3000/api/v1/cats (unless other port specified) or localhost:3000/api/v1/dogs to see all the animals!
 
 ## Endpoints Cats
+FYI: image_url can be blank/null on POST but other parameters are required
+
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
@@ -59,6 +61,7 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 |Delete a cat | DELETE    |`localhost:3000/api/v1/cats/:id`| |  
 
 ## Endpoints Dogs
+FYI: image_url can be blank/null on POST but other parameters are required
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
