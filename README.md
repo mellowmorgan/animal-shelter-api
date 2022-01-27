@@ -49,27 +49,27 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
-|See all cats (paginated) | GET    | `localhost:3000/api/vi/cats?page=PAGE_NUMBER` | _page_ |
-|See all cats (auto-paginated) | GET    | `localhost:3000/api/vi/cats` | |
-|See a specific cat | GET    | `localhost:3000/api/vi/cats/:id` | |
-|Search for cat by breed | GET    | `localhost:3000/api/vi/cats?breed=BREED&page=1` | _breed, page_ |
-|See a random cat | GET    | `localhost:3000/api/vi/cats/random` | |
-|Add/create a cat | POST    | `localhost:3000/api/vi/cats` | _name, breed, age, image_url_ |
-|Update a cat | PUT    | `localhost:3000/api/vi/cats/:id?name=NAME&breed=BREED&age=AGE&image_url=IMAGE_URL` | _name, breed, age, image_url_ |
-|Delete a cat | DELETE    |`localhost:3000/api/vi/cats/:id`| |  
+|See all cats (paginated) | GET    | `localhost:3000/api/v1/cats?page=PAGE_NUMBER` | _page_ |
+|See all cats (auto-paginated) | GET    | `localhost:3000/api/v1/cats` | |
+|See a specific cat | GET    | `localhost:3000/api/v1/cats/:id` | |
+|Search for cat by breed | GET    | `localhost:3000/api/v1/cats?breed=BREED&page=1` | _breed, page_ |
+|See a random cat | GET    | `localhost:3000/api/v1/cats/random` | |
+|Add/create a cat | POST    | `localhost:3000/api/v1/cats?name=NAME&breed=BREED&age=AGE&image_url=IMAGE_URL` | _name, breed, age, image_url_ |
+|Update a cat | PUT    | `localhost:3000/api/v1/cats/:id?name=NAME&breed=BREED&age=AGE&image_url=IMAGE_URL` | _name, breed, age, image_url_ |
+|Delete a cat | DELETE    |`localhost:3000/api/v1/cats/:id`| |  
 
 ## Endpoints Dogs
 
 |Usage | METHOD       | URL       | Params |
 | :--------|:------------| :---------| :------|
-|See all dogs (paginated) | GET    | `localhost:3000/api/vi/dogs?page=PAGE_NUMBER` | _page_ |
-|See all dogs (auto-paginated) | GET    | `localhost:3000/api/vi/dogs` | |
-|See a specific dog | GET    | `localhost:3000/api/vi/dogs/:id` | |
-|Search for dog by breed | GET    | `localhost:3000/api/vi/dogs?breed=BREED&page=1` | _breed, page_ |
-|See a random dog | GET    | `localhost:3000/api/vi/dogs/random` | |
-|Add/create a dog | POST    | `localhost:3000/api/vi/dogs` | _name, breed, age, image_url_ |
-|Update a dog | PUT    | `localhost:3000/api/vi/dogs/:id?name=NAME&breed=BREED&age=AGE&image_url=IMAGE_URL` | _name, breed, age, image_url_ |
-|Delete a dog | DELETE    |`localhost:3000/api/vi/dogs/:id`| | 
+|See all dogs (paginated) | GET    | `localhost:3000/api/v1/dogs?page=PAGE_NUMBER` | _page_ |
+|See all dogs (auto-paginated) | GET    | `localhost:3000/api/v1/dogs` | |
+|See a specific dog | GET    | `localhost:3000/api/v1/dogs/:id` | |
+|Search for dog by breed | GET    | `localhost:3000/api/v1/dogs?breed=BREED&page=1` | _breed, page_ |
+|See a random dog | GET    | `localhost:3000/api/v1/dogs/random` | |
+|Add/create a dog | POST    | `localhost:3000/api/v1/dogs?name=NAME&breed=BREED&age=AGE&image_url=IMAGE_URL` | _name, breed, age, image_url_ |
+|Update a dog | PUT    | `localhost:3000/api/v1/dogs/:id?name=NAME&breed=BREED&age=AGE&image_url=IMAGE_URL` | _name, breed, age, image_url_ |
+|Delete a dog | DELETE    |`localhost:3000/api/v1/dogs/:id`| | 
 
 
 ## Responses
